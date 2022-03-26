@@ -10,7 +10,7 @@ from rest_framework import viewsets
 class UserListSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        exclude = ('image',)
+        exclude = ('last_login', 'password')
         #fields = '__all__'
 
 
